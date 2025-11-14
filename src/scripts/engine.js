@@ -6,10 +6,10 @@ const state = {
         score: document.querySelector("#score"),
     },
     values: {
-        gameVelocity: 400,
+        gameVelocity: 1000,
         hitPosition: 0,
         result: 0,
-        currentTime: 15,
+        currentTime: 30,
     },
     action: {
         timerId: null,
