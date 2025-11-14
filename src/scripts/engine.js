@@ -6,10 +6,10 @@ const state = {
         score: document.querySelector("#score"),
     },
     values: {
-        gameVelocity: 1000,
+        gameVelocity: 500,
         hitPosition: 0,
         result: 0,
-        currentTime: 30,
+        currentTime: 60,
     },
     action: {
         timerId: null,
@@ -25,7 +25,7 @@ function countDown(){
         clearInterval(state.action.countDownTimerId);
         clearInterval(state.action.timerId);
 
-        if (state.values.result > 10) {
+        if (state.values.result > 30) {
             alert("Parabéns! O seu resultado foi: " + state.values.result); }
             else {
             playSound("gameover"); 
